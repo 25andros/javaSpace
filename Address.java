@@ -56,21 +56,8 @@ public class Address extends andria {
 
     }
 
-    public void sansAppNum() {
-        printVariables();
-    }
-
-    public void withAppNum() {
+    public void drivercode() {
         setAppNum();
         printVariables();
-
-    }
-
-    public void drivercode() {
-        pTextln("Initialise Address that isn't an appartment");
-        sansAppNum();
-
-        // pTextln("Initialise Address that is an appartment");
-        // withAppNum();
     }
 }

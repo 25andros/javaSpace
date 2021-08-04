@@ -20,10 +20,10 @@ public class andria {
                 holy.dialogue();
                 break;
             case 2:
-                ing.sansAppNum();
+                ing.drivercode();
                 break;
             case 3:
-                ing.withAppNum();
+                // ing.withAppNum();
                 break;
             case 4:
 
