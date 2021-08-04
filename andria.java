@@ -16,6 +16,7 @@ public class andria {
 
         switch (choice) {
             case 1:
+                holy.dialogue();
                 break;
             case 2:
                 break;
