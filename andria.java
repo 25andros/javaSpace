@@ -10,7 +10,7 @@ public class andria {
 
     public void flipSwitch() {
         acre holy = new acre();
-        poly mor = new poly();
+        Address ing = new Address();
 
         pTextln("\t<SWITCH>\n");
         int choice = rInt("Input which prob you'd like:");
@@ -20,10 +20,10 @@ public class andria {
                 holy.dialogue();
                 break;
             case 2:
-                mor.drivercode();
+                ing.sansAppNum();
                 break;
             case 3:
-
+                ing.withAppNum();
                 break;
             case 4:
 
