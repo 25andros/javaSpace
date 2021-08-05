@@ -18,7 +18,14 @@ public class Address extends andria {
         city = "Newport News";
         state = "VA";
         zip = 23608;
+    }
 
+    public void setStreetNumb() {
+        stnum = rInt("What is the Street #?");
+    }
+
+    public void setStreet() {
+        stname = rStr("What is the street name?");
     }
 
     public void setAppNum() {
@@ -30,17 +37,44 @@ public class Address extends andria {
         }
     }
 
-    public Integer getAppNum() {
-        return appNum;
-
+    public void setState() {
+        stname = rStr("What is the State?");
     }
 
-    public void setStreet() {
-        stname = rStr("What is the street address?");
+    public void setZip() {
+        zip = rInt("What is the zipcode?");
+    }
+
+    public Integer getStreetNumb() {
+        return appNum;
+    }
+
+    public Integer getAppNum() {
+        return appNum;
     }
 
     public String getStreet() {
         return stname;
+    }
+
+    public String getState() {
+        return stname;
+    }
+
+    public Integer getZip() {
+        return zip;
+    }
+
+    /*
+     * returns the earlier of the two zips..
+     */
+    public void comesBefore(int alpha, int beta) {
+        if (alpha <= beta) {
+            pTextln("The first zip code is:\t" + alpha + "\nFollowed by\t" + beta);
+
+        } else {
+            pTextln("The first zip code is:\t" + beta + "\nfollowed by\t" + alpha);
+        }
     }
 
     public void printVariables() {
@@ -56,8 +90,14 @@ public class Address extends andria {
 
     }
 
+    /*
+     * Initalise each object
+     */
     public void drivercode() {
+        setStreetNumb();
+        setStreet();
         setAppNum();
-        printVariables();
+        setState();
+        setZip();
     }
 }

@@ -9,26 +9,60 @@ public class andria {
     }
 
     public void flipSwitch() {
-        acre holy = new acre();
-        Address ing = new Address();
 
         pTextln("\t<SWITCH>\n");
         int choice = rInt("Input which prob you'd like:");
 
         switch (choice) {
+            // acre holy = new acre();
+            // case 1:
+            // holy.dialogue();
+            // break;
             case 1:
-                holy.dialogue();
+                Address n1 = new Address();
+                Address n3 = new Address();
+                pTextln("Address #1 please");
+                n1.drivercode();
+                pTextln("Address #2 please");
+                n3.drivercode();
+                pTextln("Now we will comepare which has a smaller Zip.");
+                n1.comesBefore(n1.getZip(), n3.getZip());
+                pTextln("The two addresses provided were:");
+                n1.printVariables();
+                n3.printVariables();
                 break;
             case 2:
-                ing.drivercode();
+                shapes cyl = new shapes();
+                shapes cyl2 = new shapes();
+                cyl.drivercode();
                 break;
             case 3:
-                // ing.withAppNum();
-                break;
-            case 4:
+                monthManip alpha = new monthManip(5);
+                monthManip beta = new monthManip(2);
+                alpha.setMonthName();
+                beta.setMonthName();
+                pTextln(alpha.getMonthName());
+                pTextln(beta.getMonthName());
+
+                pTextln("");
+                pTextln(alpha.toString());
+                pTextln(beta.toString());
+                pTextln("");
+
+                if (alpha.equals(alpha, beta)) {
+                    pTextln("The months are equal");
+                }
+
+                if (alpha.lessThan(alpha, beta)) {
+                    pTextln("The first month is before the second month.");
+                }
+
+                if (alpha.greaterThan(alpha, beta)) {
+                    pTextln("The second month is before the first month.");
+                }
 
                 break;
-            case 5:
+            case 4:
 
                 break;
             default:
@@ -167,4 +201,5 @@ public class andria {
         }
         return smallest;
     }
+
 }
