@@ -1,8 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-//andria is intended to be used as broad use anywhere modules
-
 public class andria {
 
     public andria() {
@@ -14,56 +12,14 @@ public class andria {
         int choice = rInt("Input which prob you'd like:");
 
         switch (choice) {
-            // acre holy = new acre();
-            // case 1:
-            // holy.dialogue();
-            // break;
             case 1:
-                Address n1 = new Address();
-                Address n3 = new Address();
-                pTextln("Address #1 please");
-                n1.drivercode();
-                pTextln("Address #2 please");
-                n3.drivercode();
-                pTextln("Now we will comepare which has a smaller Zip.");
-                n1.comesBefore(n1.getZip(), n3.getZip());
-                pTextln("The two addresses provided were:");
-                n1.printVariables();
-                n3.printVariables();
+                dive water = new dive();
+                water.drivercode();
                 break;
+
             case 2:
-                shapes cyl = new shapes();
-                shapes cyl2 = new shapes();
-                cyl.drivercode();
-                break;
-            case 3:
-                monthManip alpha = new monthManip(5);
-                monthManip beta = new monthManip(2);
-                alpha.setMonthName();
-                beta.setMonthName();
-                pTextln(alpha.getMonthName());
-                pTextln(beta.getMonthName());
-
-                pTextln("");
-                pTextln(alpha.toString());
-                pTextln(beta.toString());
-                pTextln("");
-
-                if (alpha.equals(alpha, beta)) {
-                    pTextln("The months are equal");
-                }
-
-                if (alpha.lessThan(alpha, beta)) {
-                    pTextln("The first month is before the second month.");
-                }
-
-                if (alpha.greaterThan(alpha, beta)) {
-                    pTextln("The second month is before the first month.");
-                }
-
-                break;
-            case 4:
-
+                cafe latte = new cafe();
+                latte.drivercode();
                 break;
             default:
                 break;
@@ -151,7 +107,15 @@ public class andria {
             total += alpha[index];
         }
         return total;
+    }
 
+    public void pArray(int[][] alpha) {
+        for (int index = 0; index < alpha.length; index++) {
+            for (int bindex = 0; bindex < alpha[index].length; bindex++) {
+                pText(alpha[index][bindex] + " ");
+            }
+            pTextln("\tRow: " + index + "");
+        }
     }
 
     public double rMax(double[] alpha) {
