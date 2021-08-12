@@ -1,4 +1,5 @@
 *.class
 /STND-BUILD
 /DEV
+.kdev4/
 

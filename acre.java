@@ -1,10 +1,12 @@
 public class acre extends andria {
     private String words;
     private int strength;
+    private String name;
 
     public acre() {
         words = "I have the high ground!";
         strength = 7;
+	name="Anakin";
     }
 
     public void setStrength() {
