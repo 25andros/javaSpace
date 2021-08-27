@@ -2,4 +2,8 @@
 /STND-BUILD
 /DEV
 .kdev4/
+vimbrowsekeys.txt
+open/
+*.py
+
 

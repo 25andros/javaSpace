@@ -8,6 +8,14 @@ public class andria {
     public andria() {
     }
 
+    public void gate() {
+        boolean repeat = true;
+        do {
+            flipSwitch();
+            repeat = rBoole("\nT|F to Repeat:");
+        } while (repeat);
+    }
+
     public void flipSwitch() {
         acre holy = new acre();
 
@@ -16,6 +24,7 @@ public class andria {
 
         switch (choice) {
             case 1:
+                holy.dialogue();
                 break;
             case 2:
                 break;

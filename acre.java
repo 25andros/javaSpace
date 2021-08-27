@@ -4,9 +4,9 @@ public class acre extends andria {
     private String name;
 
     public acre() {
-        words = "I have the high ground!";
+        words = "It's over, I have the high ground!";
         strength = 7;
-	name="Anakin";
+        name = "Anakin";
     }
 
     public void setStrength() {
@@ -25,10 +25,24 @@ public class acre extends andria {
         pTextln(words);
     }
 
+    public void yankname() {
+        // name = rStr("Input your name:");
+        name = "Kenobi";
+    }
+
+    public String putName() {
+        return name;
+    }
+
     public void dialogue() {
         getWords();
+        pTextln(putName());
+
         setWords();
         getWords();
+        yankname();
+        pTextln(putName());
+
         setStrength();
         getStrength();
     }
