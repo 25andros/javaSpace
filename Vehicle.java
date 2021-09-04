@@ -39,6 +39,7 @@ public class Vehicle {
     */
    public String toString() {
       // ITP 220 - complete this method
+      return ("Vehicle objects:");
    }
 
    /**
@@ -47,27 +48,36 @@ public class Vehicle {
     * @param other - Object being compared to 'this'
     * @return - TRUE if other contains the same information as 'this'
     */
-   public boolean equals(Object other) {
+   public boolean equals(Vehicle voiture) {
+      if (owner == voiture.owner) {
+         return true;
+      } else {
+         return false;
+      }
       // ITP 220 - complete this method
    }
 
    public String getManufacturer() {
+      return manufacturer;
 
    }
 
    public void setManufacturer(String man) {
-
+      manufacturer = man;
    }
 
    public int getCylinders() {
+      return cylinders;
 
    }
 
    public void setCylinders(int cylinders) {
+      this.cylinders = cylinders;
 
    }
 
    public Person getOwner() {
+      return owner;
       // ITP 220 - complete this method
    }
 

@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class DriverCode {
    public static void main(String[] args) {
       testPerson();
+      System.out.println("");
       testVehicle();
+      System.out.println("");
       testTruck();
    }
 
@@ -100,19 +102,21 @@ public class DriverCode {
       Truck t3 = new Truck(empty);
       System.out.println("Empty Truck is: " + t3);
 
-      Truck t4 = new Truck(t1);
+      // Truck t4 = new Truck(t1);
+      Truck t4 = t1;
       System.out.println("t4: " + t4);
 
       System.out.println("t4 equal to t1: " + t4.equals(t1)); // should be true
 
       t4.setOwner(new Person("Clive Davis"));
+      System.out.println("t4: " + t4);
 
       // retest the equals() method
       System.out.println("t4 equal to t1: " + t4.equals(t1)); // should be false
 
       // test the equals method on a Vehicle and a Truck
       Vehicle v1 = new Vehicle("Ford", 8, null);
-      Truck t5 = new Truck("Ford", 8, null, 75, 150);
+      Truck t5 = new Truck("Ford", 8, null, 75.0, 150);
       System.out.println("t5 equal to v1: " + t5.equals(v1)); // should be false because
                                                               // the "is a" relationship
                                                               // states that a Truck is a

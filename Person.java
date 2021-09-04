@@ -28,7 +28,7 @@ public class Person extends DriverCode {
     * @return (String) - user displayable String describing this Person
     */
    public String toString() {
-
+      return ("People Objects:");
    }
 
    /**
@@ -37,7 +37,12 @@ public class Person extends DriverCode {
     * @param other - Object being compared to 'this'
     * @return - TRUE if other contains the same information as 'this'
     */
-   public boolean equals(Object other) {
+   public boolean equals(Person homme) {
+      if (name == homme.name) {
+         return true;
+      } else {
+         return false;
+      }
       // ITP 220 - complete this method
    }
 
@@ -47,6 +52,11 @@ public class Person extends DriverCode {
    }
 
    public void setName(String theName) {
+      name = theName;
+
+   }
+
+   public void makeName(String theName) {
       name = rStr("What is the name of the person?");
    }
 }

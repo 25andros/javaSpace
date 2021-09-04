@@ -17,14 +17,12 @@ public class andria {
     }
 
     public void flipSwitch() {
-        acre holy = new acre();
 
         pTextln("\t<SWITCH>\n");
         int choice = rInt("Input which prob you'd like:");
 
         switch (choice) {
             case 1:
-                holy.dialogue();
                 break;
             case 2:
                 break;
