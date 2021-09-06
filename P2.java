@@ -1,4 +1,4 @@
-public class Prob2 extends andria {
+public class P2 extends andria {
 
     // private double[][] catalogue;
     private String[] catalogueName;
@@ -13,7 +13,7 @@ public class Prob2 extends andria {
 
     // Constuctors
 
-    public Prob2() {
+    public P2() {
         // catalogue = new double[3][5];
         // setCatalogueName(new String[5]);
         // setCataloguePrice(new double[5]);
@@ -100,7 +100,7 @@ public class Prob2 extends andria {
         pTextln("Price:\t\t$" + cataloguePrice[getChoice()]);
         pTextln("Quantity:\t" + catalogueQT[getChoice()]);
 
-        // Prompt user for new item if qt is 0;
+        // mpt user for new item if qt is 0;
         if (catalogueQT[getChoice()] == 0) {
             pTextln("Error!! There is 0 quantity left. Pick another item.");
             selectItem();

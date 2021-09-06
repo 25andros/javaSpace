@@ -2,7 +2,8 @@
 public class DoIT {
 
     public static void main(String[] args) {
-        Probs qs = new Probs();
+        andria qs = new andria();
+        // Mod1List qs = new Mod1List();
         qs.gate();
 
     }

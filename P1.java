@@ -3,6 +3,10 @@ import java.util.Random;
 public class P1 {
     int width, height;
 
+    public P1() {
+
+    }
+
     public P1(int width, int height) {
         this.width = width;
         this.height = height;
