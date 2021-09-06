@@ -5,5 +5,8 @@
 vimbrowsekeys.txt
 open/
 *.py
-
-
+*.c
+BUILD/
+Book_ex/
+Examples/
+Object_Passing/
