@@ -20,13 +20,10 @@ public class andria {
             case 2:
                 break;
             case 3:
-
                 break;
             case 4:
-
                 break;
             case 5:
-
                 break;
             default:
                 break;
@@ -37,12 +34,14 @@ public class andria {
     public String rStr(String alpha) {
         pTextln(alpha);
         Scanner stdin = new Scanner(System.in);
+        stdin.close();
         return stdin.nextLine();
     }
 
     public char rChar(String alpha) {
         pTextln(alpha);
         Scanner stdin = new Scanner(System.in);
+        stdin.close();
         return stdin.next().charAt(0);
     }
 
@@ -50,6 +49,7 @@ public class andria {
         pTextln(a);
         Scanner stdin = new Scanner(System.in);
         int alpha = stdin.nextInt();
+        stdin.close();
         return alpha;
     }
 
@@ -57,7 +57,7 @@ public class andria {
         pTextln(a);
         Scanner stdin = new Scanner(System.in);
         boolean alpha = stdin.nextBoolean();
-        // stdin.close();
+        stdin.close();
         return alpha;
     }
 
@@ -72,6 +72,7 @@ public class andria {
     public Double rDouble(String a) {
         System.out.print(a);
         Scanner stdin = new Scanner(System.in);
+        stdin.close();
         return stdin.nextDouble();
     }
 
