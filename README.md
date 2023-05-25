@@ -1,2 +1,6 @@
-#Info:
-As of Aug 13, 2021 this is a starting point for me to begin uploading my code.
+## basic info:
+
+As of Jun 2023, much of the code here in the repo is a basic referenc of old java that was produced years ago. 
+I'll be refactoring it. 
+
+More to come.
